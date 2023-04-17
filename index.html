@@ -14,6 +14,8 @@
         />
         <link rel="stylesheet" href="./assets/css/base.css" />
         <link rel="stylesheet" href="./assets/css/main.css" />
+        <link rel="stylesheet" href="./assets//css/grid.css" />
+        <link rel="stylesheet" href="./assets/css/responsive.css" />
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -24,8 +26,8 @@
     <body>
         <!-- Begin header -->
         <header class="header">
-            <div class="grid">
-                <nav class="navbar">
+            <div class="grid wide">
+                <nav class="navbar hide-on-mobile-tablet">
                     <ul class="navbar__list">
                         <li class="navbar__list-item navbar__list-item--dash navbar__qrcode--show">
                             <a class="" href="">Vào cửa hàng trên ứng dụng</a>
@@ -111,7 +113,7 @@
                     </ul>
                 </nav>
                 <div class="header-search">
-                    <div class="header__logo">
+                    <div class="header__logo hide-on-tablet">
                         <a href="/" class="header__logo-link">
                             <svg viewBox="0 0 192 65" class="shopee-svg-icon header-with-search__shopee-logo icon-shopee-logo">
                                 <g fill-rule="evenodd">
@@ -223,11 +225,19 @@
                     </div>
                 </div>
             </div>
+            <div class="sort">
+                <ul class="sort-list">
+                    <li class="sort-item"><a href="" class="sort-link">Liên quan</a></li>
+                    <li class="sort-item"><a href="" class="sort-link">Mới nhất</a></li>
+                    <li class="sort-item"><a href="" class="sort-link">Bán chạy</a></li>
+                    <li class="sort-item"><a href="" class="sort-link">Giá</a></li>
+                </ul>
+            </div>
         </header>
         <!-- End header -->
         <!-- Begin main -->
         <div class="main">
-            <div class="grid">
+            <div class="grid wide">
                 <div class="grid__row">
                     <div class="grid__col-2">
                         <div class="category">
@@ -249,7 +259,7 @@
                         </div>
                     </div>
                     <div class="grid__col-10">
-                        <div class="filter">
+                        <div class="filter hide-on-mobile-tablet">
                             <span class="filter-name">Sắp xếp theo</span>
                             <button class="btn btn--primary filter__btn">Phổ biến</button>
                             <button class="btn filter__btn">Mới nhất</button>
@@ -277,6 +287,49 @@
                         </div>
                         <div class="product-list">
                             <div class="grid__row">
+                                <div class="grid__col-2-4">
+                                    <a href="" class="product-item">
+                                        <div
+                                            class="product-item__img"
+                                            style="
+                                                background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lfkux3ytx2mca7_tn);
+                                            "
+                                        ></div>
+                                        <div class="product-item__body">
+                                            <h4 class="product-item__heading">Sữa rửa mặt Tạo bọt Sạch nhờn cho da dầu UNO Whip Wash Black 130g</h4>
+                                            <div class="product-item__price">
+                                                <span class="product-item__old-price">1.300.000đ</span>
+                                                <span class="product-item__new-price">999.999đ</span>
+                                            </div>
+                                            <div class="product-item__action">
+                                                <span class="product-item__action-favourite product-item__action-favourite--liked">
+                                                    <i class="product-item__action-favourite-empty fa-regular fa-heart"></i>
+                                                    <i class="product-item__action-favourite-fill fa-solid fa-heart"></i>
+                                                </span>
+                                                <span class="product-item__action-rating">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </span>
+                                            </div>
+                                            <div class="product-item__desc">
+                                                <span class="prodducte-item__desc-brand">Whoo</span>
+                                                <span class="prodducte-item__desc-origin">Hàn Quốc</span>
+                                            </div>
+
+                                            <div class="product-item__like">
+                                                <i class="fa-solid fa-check"></i>
+                                                <span> Yêu thích </span>
+                                            </div>
+                                            <div class="product-item__sale-off">
+                                                <span class="product-item__sale-off-percentage">10%</span>
+                                                <span class="product-item__sale-off-title">GIẢM</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
                                 <div class="grid__col-2-4">
                                     <a href="" class="product-item">
                                         <div
@@ -749,8 +802,9 @@
             </div>
         </div>
         <!-- End main -->
+        <div class="test"></div>
         <footer class="footer">
-            <div class="grid">
+            <div class="grid wide">
                 <div class="grid__row">
                     <div class="grid__col-2-4">
                         <h3 class="footer__heading">Chăm sóc khách hàng</h3>
@@ -821,7 +875,7 @@
                         <h3 class="footer__heading">Vào cửa hàng trên ứng dụng</h3>
                         <div class="footer__qrcode">
                             <img src="/assets/img/qrcode.png" alt="" />
-                            <div class="footer__store">
+                            <div class="footer__store hide-on-mobile-tablet">
                                 <a href="">
                                     <img src="./assets/img/playstore.png" alt="PlayStore" />
                                 </a>

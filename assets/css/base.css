@@ -1,9 +1,13 @@
-* {
-    box-sizing: inherit;
+:root {
     --primary-color: #ee4d2d;
     --header-height: 120px;
     --header-navbar-height: 34px;
     --header-search-height: calc(var(--header-height) - var(--header-navbar-height));
+    --sort-height: 48px;
+}
+
+* {
+    box-sizing: inherit;
 }
 
 html {
@@ -11,16 +15,6 @@ html {
     font-size: 62.5%;
     line-height: 1.6rem;
     font-family: "Roboto", sans-serif;
-}
-
-.grid {
-    width: 1200px;
-    max-width: 100%;
-    margin: 0 auto;
-}
-
-.grid__full-width {
-    width: 100%;
 }
 
 .grid__row {
