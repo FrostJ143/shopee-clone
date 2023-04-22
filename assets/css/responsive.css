@@ -1,3 +1,9 @@
+@media (min-width: 1024px) {
+    .hide-on-pc {
+        display: none;
+    }
+}
+
 /* Tablet and Mobile*/
 @media (max-width: 1023px) {
     :root {
@@ -57,5 +63,30 @@
 @media (max-width: 739px) {
     .hide-on-mobile {
         display: none;
+    }
+
+    .main {
+        padding: 5px;
+    }
+
+    .pagination__item-link {
+        margin: 0 4px;
+        min-width: 30px;
+    }
+
+    .header-search {
+        justify-content: center;
+    }
+
+    .footer__heading {
+        text-align: center;
+    }
+
+    .footer {
+        text-align: center;
+    }
+
+    .footer__qrcode {
+        justify-content: center;
     }
 }
